@@ -7,6 +7,9 @@ RUN echo '[nginx]' >>  /etc/yum.repos.d/nginx.repo \
   	&& echo 'enabled=1' >> /etc/yum.repos.d/nginx.repo \
 	&& yum -y install nginx \
 	&& echo '<h1>Hello, Docker!</h1>' > /usr/share/nginx/html/index.html
-    
+
+# 对外暴露80端口
+EXPOSE 80
+
 # 包装一层启动命令
 CMD ["nginx", "-g", "daemon off;"]
