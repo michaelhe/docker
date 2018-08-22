@@ -1,5 +1,3 @@
-MAINTAINER michaelhe<mching.08@gmail.com>
-
 FROM centos
 
 RUN echo '[nginx]' >>  /etc/yum.repos.d/nginx.repo \
