@@ -9,4 +9,4 @@ RUN apk update  && \
 # 对外暴露8388端口
 EXPOSE 8388
 
-ENTRYPOINT ["/usr/bin/ssserver"]
+ENTRYPOINT ["/usr/bin/ssserver", "-k12345678"]
