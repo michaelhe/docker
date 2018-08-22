@@ -1,5 +1,7 @@
 FROM centos
 
+MAINTAINER michaelhe<mching.08@gmail.com>
+
 RUN echo '[nginx]' >>  /etc/yum.repos.d/nginx.repo \
 	&& echo 'name=nginx repo' >> /etc/yum.repos.d/nginx.repo \
 	&& echo 'baseurl=http://nginx.org/packages/centos/7/$basearch/' >> /etc/yum.repos.d/nginx.repo \
