@@ -4,4 +4,4 @@
 
 # run
 
-- `docker run -d -p 10001:8388 -k $PWD`
+- `docker run -d -p 10001:8388 michaelhi/ssserver -k $PWD`
