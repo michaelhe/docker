@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER michaelhe<mching.08@gmail.com>
 
-RUN apk update -y && \
+RUN apk update  && \
     apk add py-pip && \
     pip install --upgrade pip && \
     pip install shadowsocks
