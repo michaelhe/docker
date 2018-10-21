@@ -9,7 +9,7 @@ RUN apk update  && \
 # 对外暴露8388端口
 EXPOSE 8388
 
-RUN groupadd -r app && useradd -r -g app app
+RUN adduser -D app
 USER app
 
 ENTRYPOINT ["/usr/bin/ssserver", "-k12345678"]
